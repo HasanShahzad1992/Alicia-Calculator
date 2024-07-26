@@ -1,0 +1,712 @@
+<html lang="es" style="--scrollbar-offset: 17px">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+
+    <title>The Calculator</title>
+
+    <link
+      rel="alternate"
+      type="application/json+oembed"
+      href="https://calculadoradealicia.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcalculadoradealicia.es%2F"
+    />
+
+    <!-- GOOGLE FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      id="kadence-fonts-css"
+      href="https://fonts.googleapis.com/css?family=Poppins:regular,700&amp;display=swap"
+      media="all"
+    />
+
+    <!-- MAIN STYLESHEET -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- WP-INCLUDES -->
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      media="all"
+      href="./assets/wp-includes/style.min.css"
+    />
+
+    <script
+      id="jquery-core-js"
+      src="./assets//js/wp-includes/jquery.min.js"
+    ></script>
+
+    <!-- WP-CONTENT -->
+    <link
+      rel="stylesheet"
+      id="custom-css-css"
+      media="all"
+      href="./assets/wp-content/style.css"
+    />
+
+    <link
+      rel="stylesheet"
+      id="kadence-global-css"
+      media="all"
+      href="./assets/wp-content/global.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      id="kadence-content-css"
+      media="all"
+      href="./assets/wp-content/content.min.css"
+    />
+
+    <script id="script-js" src="./assets//js/wp-content/script.js"></script>
+  </head>
+
+<!--  <body-->
+<!--          class="home page-template-default page page-id-13 wp-custom-logo wp-embed-responsive link-style-standard content-title-style-hide content-width-normal content-style-boxed content-vertical-padding-hide non-transparent-header mobile-non-transparent-header hide-focus-outline"-->
+<!--          aria-hidden="false"-->
+<!--  >-->
+<!--  <div id="wrapper" class="site wp-site-blocks">-->
+<!--    <div id="inner-wrap" class="wrap hfeed kt-clear">-->
+<!--      <div id="primary" class="content-area">-->
+<!--        <div class="content-container site-container">-->
+<!--          <main id="main" class="site-main" role="main">-->
+<!--            <div class="content-wrap">-->
+<!--              <article-->
+<!--                      id="post-13"-->
+<!--                      class="entry content-bg single-entry post-13 page type-page status-publish hentry"-->
+<!--              >-->
+<!--                <div class="entry-content-wrap">-->
+<!--                  <div class="entry-content single-content">-->
+<!--                    <h1-->
+<!--                            class="wp-block-heading has-text-align-center"-->
+<!--                            id="la-calculadora-de-alicia"-->
+<!--                    >-->
+<!--                      La CalCuladora de Alicia-->
+<!--                    </h1>-->
+
+<!--                    <div>-->
+<!--                      <div-->
+<!--                              id="calouter"-->
+<!--                              style="-->
+<!--                            width: 332.124px;-->
+<!--                            height: 518.114px;-->
+<!--                            padding-top: 20.7246px;-->
+<!--                          "-->
+<!--                      >-->
+<!--                        <div-->
+<!--                                id="display"-->
+<!--                                style="font-size: 28.2306px; height: 40.5524px"-->
+<!--                        >-->
+
+<!--                        </div>-->
+<!--                        <div-->
+<!--                                id="mainscreen"-->
+<!--                                style="width: 315.518px; height: 315.518px"-->
+<!--                        >-->
+<!--                          <div-->
+<!--                                  id="maincal"-->
+<!--                                  style="font-size: 33.2124px; top: 0%"-->
+<!--                          >-->
+<!--                            <button-->
+<!--                                    id="showres"-->
+<!--                                    onclick="bajarmaincal()"-->
+<!--                                    style="font-size: 14px"-->
+<!--                            >-->
+<!--                              Ver<br />Pantalla-->
+<!--                            </button>-->
+<!--                            <button id="tcal" onclick="calcular()">=</button>-->
+<!--                            <button id="t7" onclick="submitquery('7',false)">-->
+<!--                              7-->
+<!--                            </button>-->
+<!--                            <button id="t8" onclick="submitquery('8',false)">-->
+<!--                              8-->
+<!--                            </button>-->
+<!--                            <button id="t9" onclick="submitquery('9',false)">-->
+<!--                              9-->
+<!--                            </button>-->
+<!--                            <button-->
+<!--                                    id="tmas"-->
+<!--                                    onclick="submitquery('+',false)"-->
+<!--                                    disabled=""-->
+<!--                            >-->
+<!--                              +-->
+<!--                            </button>-->
+<!--                            <button-->
+<!--                                    id="tmen"-->
+<!--                                    onclick="submitquery('-',false)"-->
+<!--                                    disabled=""-->
+<!--                            >-->
+<!--                              - -->
+<!--                            </button>-->
+<!--                            <button id="t4" onclick="submitquery('4',false)">-->
+<!--                              4-->
+<!--                            </button>-->
+<!--                            <button id="t5" onclick="submitquery('5',false)">-->
+<!--                              5-->
+<!--                            </button>-->
+<!--                            <button id="t6" onclick="submitquery('6',false)">-->
+<!--                              6-->
+<!--                            </button>-->
+<!--                            <button-->
+<!--                                    id="tpor"-->
+<!--                                    onclick="submitquery('x',false)"-->
+<!--                                    disabled=""-->
+<!--                            >-->
+<!--                              x-->
+<!--                            </button>-->
+<!--                            <button-->
+<!--                                    id="tdiv"-->
+<!--                                    onclick="submitquery('/',false)"-->
+<!--                                    disabled=""-->
+<!--                            >-->
+<!--                              /-->
+<!--                            </button>-->
+<!--                            <button id="t1" onclick="submitquery('1',false)">-->
+<!--                              1-->
+<!--                            </button>-->
+<!--                            <button id="t2" onclick="submitquery('2',false)">-->
+<!--                              2-->
+<!--                            </button>-->
+<!--                            <button id="t3" onclick="submitquery('3',false)">-->
+<!--                              3-->
+<!--                            </button>-->
+<!--                            <button-->
+<!--                                    id="tpri"-->
+<!--                                    onclick="submitquery('primos',false)"-->
+<!--                                    disabled=""-->
+<!--                            >-->
+<!--                              |-->
+<!--                            </button>-->
+<!--                            <button-->
+<!--                                    id="trai"-->
+<!--                                    onclick="submitquery('raiz',false)"-->
+<!--                                    disabled=""-->
+<!--                            >-->
+<!--                              rc-->
+<!--                            </button>-->
+<!--                            <button id="t0" onclick="submitquery('0',false)">-->
+<!--                              0-->
+<!--                            </button>-->
+<!--                            <button-->
+<!--                                    id="tcom"-->
+<!--                                    onclick="submitquery(',',false)"-->
+<!--                            >-->
+<!--                              ,-->
+<!--                            </button>-->
+<!--                            <button id="tc" onclick="submitquery('c',false)">-->
+<!--                              C-->
+<!--                            </button>-->
+<!--                            <button-->
+<!--                                    id="tdel"-->
+<!--                                    onclick="submitquery('del',false)"-->
+<!--                            >-->
+<!--                              &lt;-->
+<!--                            </button>-->
+<!--                          </div>-->
+<!--                          <div id="mainres" style="top: -100%">-->
+<!--                            <div-->
+<!--                                    class="routthree"-->
+<!--                                    style="-->
+<!--                                  left: 78.8795px;-->
+<!--                                  top: 0px;-->
+<!--                                  width: 78.8795px;-->
+<!--                                  height: 78.8795px;-->
+<!--                                  font-size: 78.8795px;-->
+<!--                                "-->
+<!--                            >-->
+<!--                              6-->
+<!--                            </div>-->
+<!--                            <div-->
+<!--                                    class="routthree"-->
+<!--                                    style="-->
+<!--                                  left: 157.759px;-->
+<!--                                  top: 0px;-->
+<!--                                  width: 78.8795px;-->
+<!--                                  height: 78.8795px;-->
+<!--                                  font-size: 78.8795px;-->
+<!--                                "-->
+<!--                            >-->
+<!--                              6-->
+<!--                            </div>-->
+<!--                            <div-->
+<!--                                    class="routthree"-->
+<!--                                    style="-->
+<!--                                  left: 236.639px;-->
+<!--                                  top: 0px;-->
+<!--                                  width: 78.8795px;-->
+<!--                                  height: 78.8795px;-->
+<!--                                  font-size: 78.8795px;-->
+<!--                                "-->
+<!--                            >-->
+<!--                              6-->
+<!--                            </div>-->
+<!--                            <div-->
+<!--                                    class="routone"-->
+<!--                                    style="-->
+<!--                                  left: 157.759px;-->
+<!--                                  top: 78.8795px;-->
+<!--                                  width: 78.8795px;-->
+<!--                                  height: 78.8795px;-->
+<!--                                  font-size: 78.8795px;-->
+<!--                                  color: rgb(221, 221, 221);-->
+<!--                                  border-bottom: 2px solid rgb(221, 221, 221);-->
+<!--                                "-->
+<!--                            >-->
+<!--                              x-->
+<!--                            </div>-->
+<!--                            <div-->
+<!--                                    class="routthree"-->
+<!--                                    style="-->
+<!--                                  left: 236.639px;-->
+<!--                                  top: 78.8795px;-->
+<!--                                  width: 78.8795px;-->
+<!--                                  height: 78.8795px;-->
+<!--                                  font-size: 78.8795px;-->
+<!--                                  border-bottom: 2px solid rgb(221, 221, 221);-->
+<!--                                "-->
+<!--                            >-->
+<!--                              6-->
+<!--                            </div>-->
+<!--                            <div-->
+<!--                                    class="routtwo"-->
+<!--                                    style="-->
+<!--                                  left: 0px;-->
+<!--                                  top: 157.759px;-->
+<!--                                  width: 78.8795px;-->
+<!--                                  height: 78.8795px;-->
+<!--                                  font-size: 78.8795px;-->
+<!--                                  border-top: 2px solid rgb(221, 221, 221);-->
+<!--                                "-->
+<!--                            >-->
+<!--                              3-->
+<!--                            </div>-->
+<!--                            <div-->
+<!--                                    class="routtwo"-->
+<!--                                    style="-->
+<!--                                  left: 78.8795px;-->
+<!--                                  top: 157.759px;-->
+<!--                                  width: 78.8795px;-->
+<!--                                  height: 78.8795px;-->
+<!--                                  font-size: 78.8795px;-->
+<!--                                  border-top: 2px solid rgb(221, 221, 221);-->
+<!--                                "-->
+<!--                            >-->
+<!--                              9-->
+<!--                            </div>-->
+<!--                            <div-->
+<!--                                    class="routtwo"-->
+<!--                                    style="-->
+<!--                                  left: 157.759px;-->
+<!--                                  top: 157.759px;-->
+<!--                                  width: 78.8795px;-->
+<!--                                  height: 78.8795px;-->
+<!--                                  font-size: 78.8795px;-->
+<!--                                  border-top: 2px solid rgb(221, 221, 221);-->
+<!--                                "-->
+<!--                            >-->
+<!--                              9-->
+<!--                            </div>-->
+<!--                            <div-->
+<!--                                    class="routtwo"-->
+<!--                                    style="-->
+<!--                                  left: 236.639px;-->
+<!--                                  top: 157.759px;-->
+<!--                                  width: 78.8795px;-->
+<!--                                  height: 78.8795px;-->
+<!--                                  font-size: 78.8795px;-->
+<!--                                  border-top: 2px solid rgb(221, 221, 221);-->
+<!--                                "-->
+<!--                            >-->
+<!--                              6-->
+<!--                            </div>-->
+<!--                          </div>-->
+<!--                          <div id="ccontrols" style="top: -100%">-->
+<!--                            <div-->
+<!--                                    id="volver"-->
+<!--                                    onclick="showmyres()"-->
+<!--                                    style="-->
+<!--                                  color: white;-->
+<!--                                  font-size: 49.8187px;-->
+<!--                                  padding-bottom: 16.6062px;-->
+<!--                                  padding-left: 9.96373px;-->
+<!--                                  padding-right: 9.96373px;-->
+<!--                                "-->
+<!--                            >-->
+<!--                              <img-->
+<!--                                      decoding="async"-->
+<!--                                      src="https://cdn-icons-png.freepik.com/512/60/60583.png"-->
+<!--                                      id="uparrow"-->
+<!--                              />-->
+<!--                            </div>-->
+<!--                            <div-->
+<!--                                    id="divexp"-->
+<!--                                    onclick="divideExpandida(true)"-->
+<!--                                    style="display: none"-->
+<!--                            >-->
+<!--                              DIV EXPAND.-->
+<!--                            </div>-->
+<!--                            <div-->
+<!--                                    id="divnor"-->
+<!--                                    onclick="divideExpandida(false)"-->
+<!--                                    style="display: none"-->
+<!--                            >-->
+<!--                              DIV NORMAL-->
+<!--                            </div>-->
+<!--                          </div>-->
+<!--                        </div>-->
+<!--                        <div-->
+<!--                                id="publiabajo"-->
+<!--                                style="-->
+<!--                              display: initial;-->
+<!--                              bottom: -122.095px;-->
+<!--                              height: 114.526px;-->
+<!--                            "-->
+<!--                        ></div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  &lt;!&ndash; .entry-content &ndash;&gt;-->
+<!--                </div>-->
+<!--              </article>-->
+<!--              &lt;!&ndash; #post-13 &ndash;&gt;-->
+<!--            </div>-->
+<!--          </main>-->
+<!--          &lt;!&ndash; #main &ndash;&gt;-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; #primary &ndash;&gt;-->
+<!--    </div>-->
+<!--    &lt;!&ndash; #inner-wrap &ndash;&gt;-->
+<!--  </div>-->
+<!--  &lt;!&ndash; #wrapper &ndash;&gt;-->
+<!--  </body>-->
+
+  <body
+    class="home page-template-default page page-id-13 wp-custom-logo wp-embed-responsive link-style-standard content-title-style-hide content-width-normal content-style-boxed content-vertical-padding-hide non-transparent-header mobile-non-transparent-header hide-focus-outline"
+    aria-hidden="false"
+  >
+    <div id="wrapper" class="site wp-site-blocks">
+      <div id="inner-wrap" class="wrap hfeed kt-clear">
+        <div id="primary" class="content-area">
+          <div class="content-container site-container">
+            <main id="main" class="site-main" role="main">
+              <div class="content-wrap">
+                <article
+                  id="post-13"
+                  class="entry content-bg single-entry post-13 page type-page status-publish hentry"
+                >
+                  <div class="entry-content-wrap">
+                    <div class="entry-content single-content">
+                      <h1
+                        class="wp-block-heading has-text-align-center"
+                        id="la-calculadora-de-alicia"
+                      >
+                        The Calculator
+                      </h1>
+
+                      <div>
+                        <div
+                          id="calouter"
+                          style="
+                            width: 332.124px;
+                            height: 518.114px;
+                            padding-top: 20.7246px;
+                          "
+                        >
+                          <div
+                            id="display"
+                            style="font-size: 28.2306px; height: 40.5524px"
+                          >
+                           0
+                          </div>
+                          <div
+                            id="mainscreen"
+                            style="width: 315.518px; height: 315.518px"
+                          >
+                            <div
+                              id="maincal"
+                              style="font-size: 33.2124px; top: 0%"
+                            >
+                              <button
+                                id="showres"
+                                onclick="bajarmaincal()"
+                                style="font-size: 14px"
+                              >
+                                View<br />Result
+                              </button>
+                              <button id="tcal" onclick="calcular()">=</button>
+                              <button id="t7" onclick="submitquery('7',false)">
+                                7
+                              </button>
+                              <button id="t8" onclick="submitquery('8',false)">
+                                8
+                              </button>
+                              <button id="t9" onclick="submitquery('9',false)">
+                                9
+                              </button>
+                              <button
+                                id="tmas"
+                                onclick="submitquery('+',false)"
+                                disabled=""
+                              >
+                                +
+                              </button>
+                              <button
+                                id="tmen"
+                                onclick="submitquery('-',false)"
+                                disabled=""
+                              >
+                                -
+                              </button>
+                              <button id="t4" onclick="submitquery('4',false)">
+                                4
+                              </button>
+                              <button id="t5" onclick="submitquery('5',false)">
+                                5
+                              </button>
+                              <button id="t6" onclick="submitquery('6',false)">
+                                6
+                              </button>
+                              <button
+                                id="tpor"
+                                onclick="submitquery('x',false)"
+                                disabled=""
+                              >
+                                x
+                              </button>
+                              <button
+                                id="tdiv"
+                                onclick="submitquery('/',false)"
+                                disabled=""
+                              >
+                                /
+                              </button>
+                              <button id="t1" onclick="submitquery('1',false)">
+                                1
+                              </button>
+                              <button id="t2" onclick="submitquery('2',false)">
+                                2
+                              </button>
+                              <button id="t3" onclick="submitquery('3',false)">
+                                3
+                              </button>
+                              <button
+                                id="tpri"
+                                onclick="submitquery('primos',false)"
+                                disabled=""
+                              >
+                                |
+                              </button>
+                              <button
+                                id="trai"
+                                onclick="submitquery('raiz',false)"
+                                disabled=""
+                              >
+                                rc
+                              </button>
+                              <button id="t0" onclick="submitquery('0',false)">
+                                0
+                              </button>
+                              <button
+                                id="tcom"
+                                onclick="submitquery(',',false)"
+                              >
+                                ,
+                              </button>
+                              <button id="tc" onclick="submitquery('c',false)">
+                                C
+                              </button>
+                              <button
+                                id="tdel"
+                                onclick="submitquery('del',false)"
+                              >
+                                &lt;
+                              </button>
+                            </div>
+                            <div id="mainres" style="top: -100%">
+                              <div
+                                class="routthree"
+                                style="
+                                  left: 78.8795px;
+                                  top: 0px;
+                                  width: 78.8795px;
+                                  height: 78.8795px;
+                                  font-size: 78.8795px;
+                                "
+                              >
+                                6
+                              </div>
+                              <div
+                                class="routthree"
+                                style="
+                                  left: 157.759px;
+                                  top: 0px;
+                                  width: 78.8795px;
+                                  height: 78.8795px;
+                                  font-size: 78.8795px;
+                                "
+                              >
+                                6
+                              </div>
+                              <div
+                                class="routthree"
+                                style="
+                                  left: 236.639px;
+                                  top: 0px;
+                                  width: 78.8795px;
+                                  height: 78.8795px;
+                                  font-size: 78.8795px;
+                                "
+                              >
+                                6
+                              </div>
+                              <div
+                                class="routone"
+                                style="
+                                  left: 157.759px;
+                                  top: 78.8795px;
+                                  width: 78.8795px;
+                                  height: 78.8795px;
+                                  font-size: 78.8795px;
+                                  color: rgb(221, 221, 221);
+                                  border-bottom: 2px solid rgb(221, 221, 221);
+                                "
+                              >
+                                x
+                              </div>
+                              <div
+                                class="routthree"
+                                style="
+                                  left: 236.639px;
+                                  top: 78.8795px;
+                                  width: 78.8795px;
+                                  height: 78.8795px;
+                                  font-size: 78.8795px;
+                                  border-bottom: 2px solid rgb(221, 221, 221);
+                                "
+                              >
+                                6
+                              </div>
+                              <div
+                                class="routtwo"
+                                style="
+                                  left: 0px;
+                                  top: 157.759px;
+                                  width: 78.8795px;
+                                  height: 78.8795px;
+                                  font-size: 78.8795px;
+                                  border-top: 2px solid rgb(221, 221, 221);
+                                "
+                              >
+                                3
+                              </div>
+                              <div
+                                class="routtwo"
+                                style="
+                                  left: 78.8795px;
+                                  top: 157.759px;
+                                  width: 78.8795px;
+                                  height: 78.8795px;
+                                  font-size: 78.8795px;
+                                  border-top: 2px solid rgb(221, 221, 221);
+                                "
+                              >
+                                9
+                              </div>
+                              <div
+                                class="routtwo"
+                                style="
+                                  left: 157.759px;
+                                  top: 157.759px;
+                                  width: 78.8795px;
+                                  height: 78.8795px;
+                                  font-size: 78.8795px;
+                                  border-top: 2px solid rgb(221, 221, 221);
+                                "
+                              >
+                                9
+                              </div>
+                              <div
+                                class="routtwo"
+                                style="
+                                  left: 236.639px;
+                                  top: 157.759px;
+                                  width: 78.8795px;
+                                  height: 78.8795px;
+                                  font-size: 78.8795px;
+                                  border-top: 2px solid rgb(221, 221, 221);
+                                "
+                              >
+                                6
+                              </div>
+                            </div>
+                            <div id="ccontrols" style="top: -100%">
+                              <div
+                                id="volver"
+                                onclick="showmyres()"
+                                style="
+                                  color: white;
+                                  font-size: 49.8187px;
+                                  padding-bottom: 16.6062px;
+                                  padding-left: 9.96373px;
+                                  padding-right: 9.96373px;
+                                "
+                              >
+                                <img
+                                  decoding="async"
+                                  src="https://cdn-icons-png.freepik.com/512/60/60583.png"
+                                  id="uparrow"
+                                />
+                              </div>
+                              <div
+                                id="divexp"
+                                onclick="divideExpandida(true)"
+                                style="display: none"
+                              >
+                                DIV EXPAND.
+                              </div>
+                              <div
+                                id="divnor"
+                                onclick="divideExpandida(false)"
+                                style="display: none"
+                              >
+                                DIV NORMAL
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            id="publiabajo"
+                            style="
+                              display: initial;
+                              bottom: -122.095px;
+                              height: 114.526px;
+                            "
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- .entry-content -->
+                  </div>
+                </article>
+                <!-- #post-13 -->
+              </div>
+            </main>
+            <!-- #main -->
+          </div>
+        </div>
+        <!-- #primary -->
+      </div>
+      <!-- #inner-wrap -->
+    </div>
+    <!-- #wrapper -->
+  </body>
+</html>
